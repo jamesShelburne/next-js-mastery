@@ -1,5 +1,6 @@
 import {ClerkProvider} from '@clerk/nextjs'
 import React from 'react'
+/* eslint-disable camelcase */
 import {Inter, Space_Grotesk} from 'next/font/google'
 import type { Metadata } from 'next';
 import './globals.css';
@@ -21,7 +22,7 @@ export const metadata : Metadata = {
   title: 'DevFlow',
   description: 'DevFlow is a platform for developers to share and discover new projects',
   icons: {
-    icon: '/assets/images/site-logo.svg',
+    icon: 'public/assets/images/site-logo.svg',
   }
 
 }

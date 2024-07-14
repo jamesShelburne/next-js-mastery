@@ -14,5 +14,10 @@
   "prettier.arrowParens": "always",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  
+    "files.associations": {
+      "*.css": "tailwindcss"
+    }
+  
 }
