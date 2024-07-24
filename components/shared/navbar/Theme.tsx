@@ -14,6 +14,7 @@ import {
     MenubarTrigger,
   } from "@/components/ui/menubar"
 import Image from 'next/image'
+import { themes } from '@/constants'
   
 
 const Theme = () => {
@@ -28,9 +29,19 @@ const Theme = () => {
     }
     </MenubarTrigger>
     <MenubarContent className = "absolue dark:border-dark-400 dark:bg-dark-300 -right-12 mt-3 min-w-[120px] rounded border py-2">
-      <MenubarItem>
-        New Tab <MenubarShortcut>⌘T</MenubarShortcut>
-      </MenubarItem>
+      
+      {themes.map((item)=>
+      <MenubarItem
+      key = {item.value}
+      onClick={() => {}}
+      >
+        <Image 
+        src = {item.icon} 
+        alt = {item.value} 
+        width = {16} 
+        height = {16} 
+        className = {`${mode === item.value && 'active-theme'}`}/>
+      </MenubarItem>))}
       <MenubarItem>New Window</MenubarItem>
       <MenubarSeparator />
       <MenubarItem>Share</MenubarItem>
