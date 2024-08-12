@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { UserButton, SignedIn } from '@clerk/nextjs'
 import GlobalSearch from './search/GlobalSearch'
-import Theme from './Theme'
+import Theme from '../Theme'
 
 const Navbar = () => {
   return (

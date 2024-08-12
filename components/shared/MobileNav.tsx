@@ -15,8 +15,10 @@ import { Link } from 'lucide-react'
 import { SignedOut } from '@clerk/nextjs'
 import { Button } from '@/components/ui/button'
 import {usePathname} from 'next/navigation'
+import { sidebarLinks } from '@/constants'
   
 const NavContent = () => {
+    const pathname = usePathname();
   return (
 <section className = "flex h-full flex-col gap-6 pt-16">
    
@@ -37,14 +39,10 @@ const NavContent = () => {
               </Link>
             </SheetClose>
       )
-
     })}
-
 </section> 
-
 )
 }
-
 const MobileNav = () => {
   return (
 <Sheet>
@@ -70,10 +68,10 @@ const MobileNav = () => {
       <div className='flex flex-col gap-3'>
         <SheetClose asChild>
           <Link href='/sign-in'>
-                <Button className='small-medium btn-secondary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none'>
-                  <span className= "primary-text-gradient">
-                    Log In
-                  </span>
+                <Button className='small-medium btn-secondary text-dark400_light900 min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none'>
+        
+                    Sign Up
+                  
                   </Button>          
            </Link>
 

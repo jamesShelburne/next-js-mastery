@@ -1,6 +1,6 @@
 export const themes = [
-    {vlaue: "light", label: "Light", icon: "/assets/icons/sun.svg"},
-    {vlaue: "dark", label: "Dark", icon: "/assets/icons/moon.svg"},
-    {vlaue: "system", label: "System", icon: "/assets/icons/computer.svg"},
+    {value: "light", label: "Light", icon: "/assets/icons/sun.svg"},
+    {value: "dark", label: "Dark", icon: "/assets/icons/moon.svg"},
+    {value: "system", label: "System", icon: "/assets/icons/computer.svg"},
 
 ]

@@ -28,11 +28,12 @@ const Theme = () => {
     (<Image src = "/assets/icons/moon.svg" alt = "moon" width ={20} height = {20} className = "active-theme" />)
     }
     </MenubarTrigger>
-    <MenubarContent className = "absolue dark:border-dark-400 dark:bg-dark-300 -right-12 mt-3 min-w-[120px] rounded border py-2">
+    <MenubarContent className = "dark:border-dark-400 dark:bg-dark-300 absolute -right-12 mt-3 min-w-[120px] rounded border py-2">
       
       {themes.map((item)=>
       <MenubarItem
       key = {item.value}
+      className = "dark:focus:bg-dark-400 flex items-center gap-4 px-2.5 py-2"
       onClick={() => {}}
       >
         <Image 
@@ -41,7 +42,8 @@ const Theme = () => {
         width = {16} 
         height = {16} 
         className = {`${mode === item.value && 'active-theme'}`}/>
-      </MenubarItem>))}
+          <p className = {`body-semibold text-light-500 ${mode === item.value ? 'text-primary-500': 'text-dark100_light900'}`}>{item.label}</p>
+      </MenubarItem>)}
       <MenubarItem>New Window</MenubarItem>
       <MenubarSeparator />
       <MenubarItem>Share</MenubarItem>
