@@ -40,7 +40,7 @@ const RightSidebar = () => {
    
   return (
 
-    <section className = "background-light900_dark200 light-border shadow-light-300 custom-scrollbar sticky right-0 top-0 flex h-screen w-[330px] flex-col overflow-y-auto border-l p-6 pt-36 max-xl:hidden dark:shadow-none"> 
+    <section className = "background-light900_dark200 light-border shadow-light100_darknone custom-scrollbar sticky right-0 top-0 flex h-screen w-[330px] flex-col overflow-y-auto border-l p-6 pt-36 max-xl:hidden dark:shadow-none"> 
 
         <div>
             <h3 className='h3-bold text-dark200_light900'> Top Questions </h3>
@@ -69,8 +69,6 @@ const RightSidebar = () => {
                 {popularTags.map((tag) => (
                     <RenderTag 
                 
-                    
-                    href={`/tags/${tag}`}
                     key = {tag._id}
                     _id = {tag._id}
                     name = {tag.name}
