@@ -3,20 +3,28 @@ import Image from 'next/image'
 import { Button } from '../ui/button'
 import { Link } from 'lucide-react'
 
-const NoResult = () => {
+interface Props {
+  title: string;
+  description: string;
+  link: string;
+  linkTitle: string;
+
+}
+
+const NoResult = ({title, description,link, linkTitle } : Props ) => {
   return (
     <div className = "mt-10 flex w-full flex-col items-center justify-center">
       <Image src = "/assets/images/light-illustration.png" alt = "no result illustration" width = {270} height = {270} className = "block object-contain dark:hidden"  />
 
       <Image src = "/assets/images/dark-illustration.png" alt = "no result illustration" width = {270} height = {270} className = " hidden object-contain dark:flex"  />
       
-      <h2 className = "h3-bold text-dark100_light900 mt-5">There's no questions to show</h2>
-      <p className = "body-regular text-dark300_light700 mt-2">Be the first to break the silence! 🚀 Ask a Question and kickstart the discussion. our query could be the next big thing others learn from. Get involved! 💡</p>
-        <Link>
+      <h2 className = "h3-bold text-dark200_light900 mt-8">{title}</h2>
+      <p className = "body-regular text-dark500_light700 my-3.5 max-w-md text-center">{description}</p>
+        <Link href = {link}>
         
-          <Button>
+          <Button className = "paragraph-medium bg-primary-500 text-light-900 hover:bg-primary-500 dark:bg-primary-500 dark:text-light-900 mt-5 min-h-[46px] rounded-lg px-4 py-3" >
 
-            Ask a Question
+            {linkTitle}
           </Button>
 
         </Link>

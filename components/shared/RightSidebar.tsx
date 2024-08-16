@@ -7,27 +7,27 @@ import RenderTag from './RenderTag';
 
 const hotQuestions = [
 
-    { _id: 1, title: 'Would it be appropriate to point out an error in another paper during a referee report?'},
-    { _id: 2, title: 'How can an airconditioning machine exist?'},
-    { _id: 3, title: 'Interrogated every time crossing UK Border as citizen'},
-    { _id: 4, title: 'Low digit addition generator'},
-    { _id: 5, title: 'What is an example of 3 numbers that do not make up a vector?'},
+    { _id: "1", title: 'Would it be appropriate to point out an error in another paper during a referee report?'},
+    { _id: "2", title: 'How can an airconditioning machine exist?'},
+    { _id: "3", title: 'Interrogated every time crossing UK Border as citizen'},
+    { _id: "4", title: 'Low digit addition generator'},
+    { _id: "5", title: 'What is an example of 3 numbers that do not make up a vector?'},
 ];
 
 const popularTags = [
-    {_id: 1, name: 'javascript',
+    {_id: "1", name: 'javascript',
         totalQuestions: 5
     }, 
-    {_id: 2, name: 'react',
+    {_id: "2", name: 'react',
         totalQuestions: 5
     },
-     {_id: 3, name: 'next',
+     {_id: "3", name: 'next',
         totalQuestions: 5
     },
-     {_id: 4, name: 'vue',
+     {_id: "4", name: 'vue',
         totalQuestions: 5
     },
-     {_id: 5, name: 'redux',
+     {_id: "5", name: 'redux',
         totalQuestions: 5
     },
 
