@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Link } from 'lucide-react';
 import RenderTag from '../shared/RenderTag';
-import Metric from '../shared/metric';
+import Metric from '../shared/Metric';
 import { formatAndDivideNumbers, getTimestamp } from '@/lib/utils';
   
 
