@@ -7,7 +7,7 @@ import Theme from '../Theme'
 
 const Navbar = () => {
   return (
-    <nav className ='flex-between background-light900_dark200 shadow-light-300 fixed z-50 w-full gap-5 p-6 sm:px-12 dark:shadow-none'>Navbar
+    <nav className ='flex-between background-light900_dark200 shadow-light-300 fixed z-50 w-full gap-5 p-6 sm:px-12 dark:shadow-none'>
     <Link href='/' className = 'flex items-center gap-1'>
       <Image src = '/assets/images/site-logo.svg' width = {23} height = {23} alt='DevFlow'/>
 
@@ -23,7 +23,7 @@ const Navbar = () => {
     variables: {colorPrimary: '#ff7000'}
     }}/>
 </SignedIn>
-MobileNavigation
+
     </div>
     </nav>
   )
